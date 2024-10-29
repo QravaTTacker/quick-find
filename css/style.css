@@ -91,7 +91,7 @@ li {
 
   &::after {
     content: "";
-    background-color: var(--primary);
+    background-color: var(--tertiary);
     height: 0.1em;
     width: 100%;
     position: absolute;
@@ -101,6 +101,11 @@ li {
 
   &:hover::after {
     inset: 80% 0;
+  }
+
+  &:active:after {
+    background-color: var(--primary);
+    transition: 0.1s;
   }
 }
 
